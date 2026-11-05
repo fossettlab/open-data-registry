@@ -1,37 +1,33 @@
-Name: NASA Planetary Data System Geosciences Node Planetary Science Archive
+Name: Independent Copy of NASA Planetary Data System Geosciences Node Data
 Description: |
-  The NASA Planetary Data System (PDS) Geosciences Node at Washington University in
-  St. Louis archives data on the surfaces and interiors of terrestrial planetary bodies,
-  including Mars, the Moon, Venus and Mercury, from missions such as Mars Reconnaissance
-  Orbiter, Curiosity (MSL), Perseverance (Mars 2020), Mars Odyssey, Mars Express, Lunar
-  Reconnaissance Orbiter and Artemis II.
-# [CONFIRM cloud formats, e.g. COG/Zarr]
-Documentation: https://pds-geosciences.wustl.edu/  # [CONFIRM doc URL]
-# Descriptive documentation draft: https://github.com/fossettlab/open-data-examples
+  A proposed independent copy of public data sourced from the NASA Planetary Data
+  System (PDS) Geosciences Node, operated by WashU EEPS (Washington University in
+  St. Louis Department of Earth, Environmental, and Planetary Sciences). NASA and
+  the PDS Geosciences Node do not operate this copy; source attribution does not
+  imply their endorsement.
+  The source archive covers the surfaces and interiors of terrestrial planetary
+  bodies, including Mars, the Moon, Venus, and Mercury, and includes PDS3 and PDS4
+  science data, documentation, and ancillary files. Product metadata are stored in
+  PDS labels (keyword=value in PDS3; XML in PDS4).
+  The AWS bucket has not yet been provisioned. The copy's coverage is to be
+  determined; this draft does not claim a complete or current mirror of the source
+  archive. The documentation link below describes the source archive.
+Documentation: https://pds-geosciences.wustl.edu/
 Contact: Alex Bradley, abradley@wustl.edu
-ManagedBy: "[NASA PDS Geosciences Node, Washington University in St. Louis](https://pds-geosciences.wustl.edu/)"
-UpdateFrequency: New data are added as NASA mission releases are delivered, typically every three months.
-# Collabs:
-#   [CONFIRM: ask AWS whether to tag the NASA collab — https://registry.opendata.aws/collab/nasa/]
-#   ASDI?:
-#     Tags:
-#       - geospatial
+ManagedBy: "WashU EEPS (Washington University in St. Louis Department of Earth, Environmental, and Planetary Sciences)"
+UpdateFrequency: |
+  To be determined for this independent copy. The source archive's release schedule
+  does not establish the copy's refresh schedule.
 Tags:
-  - aws-pds
+  - nasa
   - planetary
+  - mars
   - geospatial
-  - lunar
-  # [CONFIRM tags: earth observation, nasa, mars]
-License: "[Public domain](https://pds-geosciences.wustl.edu/faq.html). There are no restrictions on the use of PDS data; please cite datasets as described in the PDS citation guidance."
-Resources:
-  - Description: PDS Geosciences Node archive
-    ARN: arn:aws:s3:::pds-geosciences
-    Region: us-west-2  # handbook default for geospatial
-    Type: S3 Bucket
-# [CONFIRM exact size / what will go up first — about 400 TB per Oct 2026 WashU/AWS discussions]
+License: "[Public domain](https://pds-geosciences.wustl.edu/faq.html). There are no restrictions on the use of PDS data; please cite datasets as described in the [PDS citation guidance](https://pds.nasa.gov/datastandards/citing/)."
+Resources: []
 DataAtWork:
   Tutorials:
-    - Title: "Get To Know A Dataset: NASA PDS Geosciences Node Planetary Science Archive"
+    - Title: "Get To Know A Dataset: Independent Copy of NASA PDS Geosciences Node Data"
       URL: https://github.com/fossettlab/open-data-examples/blob/main/pds-geosciences/get-to-know-a-dataset.ipynb
       NotebookURL: https://github.com/fossettlab/open-data-examples/blob/main/pds-geosciences/get-to-know-a-dataset.ipynb
       AuthorName: Alex Bradley
